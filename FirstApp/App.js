@@ -1,4 +1,3 @@
-// /replaceStateText.js
 import React from 'react';
 import Hybrid from './src/ReplaceStateText/replaceStateText';
 

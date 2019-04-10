@@ -1,6 +1,6 @@
-// /App.js
+// /replaceStateText.js
 import React from 'react';
-import Hybrid from './src/App';
+import Hybrid from './src/ReplaceStateText/replaceStateText';
 
 const App = (props) => {
   return (

@@ -1,9 +1,14 @@
 import React from 'react';
-import Hybrid from './src/ReplaceStateText/replaceStateText';
+import {HomeScreen} from "./src/navigation/navigation";
+import  {ProfileScreen} from "./src/navigation/profil";
 
-const App = (props) => {
-  return (
-    <Hybrid/>
-  );
-};
+import {createStackNavigator, createAppContainer} from 'react-navigation';
+
+const MainNavigator = createStackNavigator({
+  Home: {screen: HomeScreen},
+  Profile: {screen: ProfileScreen},
+});
+
+const App = createAppContainer(MainNavigator);
+
 export default App;

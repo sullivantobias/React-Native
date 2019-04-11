@@ -48,7 +48,6 @@ const styles = StyleSheet.create({
     borderBottomColor: 'black',
     borderBottomWidth: 2,
     padding: 10,
-    outlineStyle: 'none'
   },
   active: {
     borderLeftColor: 'black',

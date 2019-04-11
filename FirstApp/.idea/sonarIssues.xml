@@ -48,6 +48,16 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/navigation/navigation.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/navigation/profil.js">
+          <value>
+            <set />
+          </value>
+        </entry>
       </map>
     </option>
   </component>

@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {TouchableOpacity, Text, View} from 'react-native';
+import {TouchableOpacity, Text, View, Alert} from 'react-native';
 import InputTest from "../inputActive/inputActive";
 
 export default class Form extends Component {
@@ -12,7 +12,7 @@ export default class Form extends Component {
   }
 
   send = () => {
-    alert(`You signed up with Email: ${this.state.email} and Password: ${this.state.password}`)
+    Alert.alert('Signed', 'Thanks for your sub')
   };
 
   handleChangeInput = (e) => {

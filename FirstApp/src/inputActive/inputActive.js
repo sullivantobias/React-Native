@@ -13,19 +13,14 @@ export default class InputTest extends Component {
   }
 
   toggleClass = (e) => {
-    this.setState(previous => ({
-      [e.target.name]: true
+    this.setState(({
+      [e.target.name]: !this.state[e.target.name]
     }));
   };
 
   render() {
     return (
-        <View style={{
-          flex: 1,
-          flexDirection: 'row',
-          alignItems: 'stretch',
-          justifyContent: 'space-evenly'
-        }}>
+        <View>
           <TextInput
               style={[styles.inputsForm, this.state.email ? styles.active : '']}
               onFocus={this.toggleClass}
@@ -35,6 +30,7 @@ export default class InputTest extends Component {
               onChange={this.props.onChange}
           />
           <TextInput
+              secureTextEntry={true}
               style={[styles.inputsForm, this.state.password ? styles.active : '']}
               onFocus={this.toggleClass}
               onBlur={this.toggleClass}
@@ -49,11 +45,13 @@ export default class InputTest extends Component {
 
 const styles = StyleSheet.create({
   inputsForm: {
-    borderBottomColor: 'red',
+    borderBottomColor: 'black',
     borderBottomWidth: 2,
-    padding: 10
+    padding: 10,
+    outlineStyle: 'none'
   },
   active: {
-    borderBottomColor: 'green',
+    borderLeftColor: 'black',
+    borderLeftWidth: 2,
   }
 });

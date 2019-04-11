@@ -21,10 +21,11 @@ export default class Form extends Component {
 
   render() {
     return (
-        <View style={{flex: 1}}>
+        <View style={{alignItems: 'center'}}>
           <InputTest onChange={this.handleChangeInput}/>
-          <TouchableOpacity onPress={this.send}>
-            <Text>Submit</Text>
+          <TouchableOpacity onPress={this.send}
+                            style={{marginTop: 50, padding: 10, backgroundColor: 'green'}}>
+            <Text style={{color: 'white'}}>Submit</Text>
           </TouchableOpacity>
         </View>
     );
